@@ -7,7 +7,7 @@ import { FaTwitter } from "react-icons/fa";
 const Footer = () => {
   return (
     <>
-    <div className="flex justify-around">
+    <div className="flex flex-col sm:flex-row justify-around">
       <div className="flex flex-col items-center">
         <img className="w-40 h-20 mb-4" src={logo} alt="" />
         <h3 className="m-5">Follow us on social media</h3>
@@ -24,10 +24,10 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="flex gap-x-20 items-center">
+      <div className="flex flex-col sm:flex-row gap-x-20 items-center">
         <div>
             <h3 className="font-bold">Quick Links</h3>
-            <li className="list-none mt-5 text-sm">
+            <li className="list-none mt-5 text-sm ml-5">
                 <ul className="my-5">About Us</ul>
                 <ul className="my-5">Our Services</ul>
                 <ul className="my-5">Our Blog's</ul>
@@ -36,21 +36,21 @@ const Footer = () => {
         </div>
         <div>
             <h3 className="font-bold">Appoinment</h3>
-            <li className="list-none mt-5 text-sm">
+            <li className="list-none mt-5 text-sm ml-5">
                 <ul className="my-5">Web Design and developement</ul>
                 <ul className="my-5">UI UX Service</ul>
                 <ul className="my-5">Digital Marketing</ul>
                 <ul className="my-5">Custom Web Design</ul>
             </li>
         </div>
-        <div className="flex flex-col mt-0">
+        <div className="flex flex-col mt-3 mb-4">
             <h3 className="font-bold mb-6">Contact Info</h3>
-            <div>
+            <div className="ml-5">
                 <span className="text-sm">Email</span>
                 <p className="text-sm ">hunkcyAgencyUI@gmail.com</p>
             </div>
 
-            <div className="text-sm mt-6">
+            <div className="text-sm mt-6 ml-5">
                 <span>Location</span>
                 <p>302/1, Hazi Tower, Gandaria New <br /> Rd, Dhaka 1204</p>
             </div>
@@ -58,7 +58,7 @@ const Footer = () => {
       </div>
 
     </div>
-      <div className="flex items-center justify-around h-16 bg-black text-white">
+      <div className="flex flex-col sm:flex-row items-center justify-around h-16 bg-black text-white">
       <h4>©2024 Bookky | All Rights Reserved.</h4>
       <div className="flex items-center gap-5">
           <p>Terms and service</p>

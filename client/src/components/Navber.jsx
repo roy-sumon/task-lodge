@@ -3,9 +3,10 @@ import logo from '../assets/logo.png'
 
 const Navber = () => {
   return (
-    <div className='bg-white flex justify-around items-center'>
+   <>
+    <div className='bg-white flex justify-around items-center border border-b-1'>
         <img className='w-[160px] h-[70px]' src={logo} alt="" />
-        <li className='flex gap-8'>
+        <li className='hidden sm:flex gap-8'>
             <ul className='hover:font-semibold cursor-pointer'>Home</ul>
             <ul className='hover:font-semibold cursor-pointer'>About</ul>
             <ul className='hover:font-semibold cursor-pointer'>Rooms</ul>
@@ -18,6 +19,7 @@ const Navber = () => {
         </div>
 
     </div>
+   </>
   )
 }
 

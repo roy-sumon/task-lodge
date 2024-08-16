@@ -8,9 +8,9 @@ import man_2 from "../assets/man_2.jpg";
 
 const ReviewSection = () => {
   return (
-    <div className="grid grid-cols-2 gap-3">
-      <div className="bg-black w-[53rem] h-[20rem] text-white flex flex-col items-center justify-center mb-14">
-        <h1 className="text-4xl">
+    <div className="flex flex-col sm:flex-row gap-1">
+      <div className="bg-black w-[30rem] h-[15rem] sm:w-[53rem] sm:h-[20rem] text-white flex flex-col items-center justify-center mb-14">
+        <h1 className="text-2xl sm:text-4xl">
           Rave Reviews from Our <br /> Satisfied Guests
         </h1>
         <div className="flex items-center mt-10 font-bold text-2xl gap-10">
@@ -25,7 +25,7 @@ const ReviewSection = () => {
       </div>
 
 {/* Review man 1 */}
-      <div className="flex items-center p-5 gap-5 absolute left-[53rem]">
+      <div className="flex flex-col sm:flex-row items-center p-5 gap-5">
         <div className="bg-white h-[15rem] w-[25rem] p-5 rounded-xl">
           <div className="flex">
             <img className="w-14 h-14 rounded-full" src={man_1} alt="" />

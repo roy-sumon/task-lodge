@@ -10,7 +10,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className='bg-gray-100'>
+    <div className='bg-whites w-[100vw] overflow-x-hidden scroll-'>
       <Navber />
       <HeroSection />
       <MidleSection />
